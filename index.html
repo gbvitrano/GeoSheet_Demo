@@ -1969,7 +1969,8 @@ var PruneClusterLeafletSpiderfier = (L.Layer ? L.Layer : L.Class).extend({
       <button class="tab-btn"        data-tab="stats"   onclick="showTab('stats')">Statistiche &amp; DataViz</button>
       <button class="tab-btn" data-tab="custom0" onclick="showTab('custom0')">Sheet Demo</button>
       <button class="tab-btn" data-tab="custom1" onclick="showTab('custom1')">Info</button>
-      
+      <button class="tab-btn" data-tab="gui" onclick="showTab('gui')">GUI</button>
+
     </div>
 
     <div id="pane-layers" class="tab-pane active">
@@ -2031,7 +2032,40 @@ var PruneClusterLeafletSpiderfier = (L.Layer ? L.Layer : L.Class).extend({
 
     <div id="pane-custom0" class="tab-pane"></div>
   <div id="pane-custom1" class="tab-pane"></div>
-  
+
+  <div id="pane-gui" class="tab-pane" style="flex-direction:column;gap:18px;">
+    <div style="font-size:13px;font-weight:600;color:var(--primary);padding-bottom:6px;border-bottom:1px solid var(--sb-border);">Interfaccia grafica del plugin</div>
+
+    <div style="display:flex;flex-direction:column;gap:6px;">
+      <img src="img/01.png" alt="Schermata principale – Google Spreadsheet" style="width:100%;border:1px solid #ddd;border-radius:4px;">
+      <p style="font-size:11px;color:#555;margin:0;">Schermata principale del plugin: selezione del progetto, inserimento URL/ID del foglio Google, autenticazione OAuth2, caricamento layer e gestione della sincronizzazione automatica.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:6px;">
+      <img src="img/02.png" alt="Inizializzazione foglio Google Sheets" style="width:100%;border:1px solid #ddd;border-radius:4px;">
+      <p style="font-size:11px;color:#555;margin:0;">Tab di inizializzazione: permette di creare un nuovo foglio Google o collegarne uno esistente, definire i layer con le relative colonne attributo, il CRS e le credenziali di autenticazione.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:6px;">
+      <img src="img/03.png" alt="Configurazione mappa web – stile, tooltip, clustering" style="width:100%;border:1px solid #ddd;border-radius:4px;">
+      <p style="font-size:11px;color:#555;margin:0;">Tab mappa web: configurazione del tema grafico, titolo, layer da esportare, campi da mostrare in tooltip/popup/pannello laterale, e opzioni di marker clustering.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:6px;">
+      <img src="img/04.png" alt="Documentazione – struttura del foglio e tag personalizzati" style="width:100%;border:1px solid #ddd;border-radius:4px;">
+      <p style="font-size:11px;color:#555;margin:0;">Guida integrata: descrive il primo avvio del plugin, le dipendenze richieste e la struttura del foglio Google con le colonne obbligatorie e i tag di personalizzazione.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:6px;">
+      <img src="img/05.png" alt="Documentazione – gestione conflitti e tab personalizzati" style="width:100%;border:1px solid #ddd;border-radius:4px;">
+      <p style="font-size:11px;color:#555;margin:0;">Guida integrata: gestione dei conflitti di modifica concorrente e configurazione dei tab personalizzati nel viewer web tramite variabili del foglio.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:6px;">
+      <img src="img/06.png" alt="Tab Info – versione, autore e librerie JavaScript" style="width:100%;border:1px solid #ddd;border-radius:4px;">
+      <p style="font-size:11px;color:#555;margin:0;">Tab Informazioni: versione del plugin, descrizione, autore, compatibilità QGIS, licenza e riepilogo delle librerie JavaScript utilizzate nel viewer web.</p>
+    </div>
+  </div>
 
     <div id="sidebar-footer">
       Generato con <strong>GeoSheet</strong> by <a href="https://www.linkedin.com/in/gbvitrano/" target="_blank" rel="noopener noreferrer" style="color:inherit;">@gbvitrano</a> &middot; 28/03/2026
