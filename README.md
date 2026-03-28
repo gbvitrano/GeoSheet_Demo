@@ -8,3 +8,7 @@ Tra le cose che fa: genera una mappa WebGIS come file HTML autonomo, apribile in
 Per i layer a punti c'è il raggruppamento marker con una ciambella SVG categorica — visivamente efficace e leggibile anche con molti punti sovrapposti. Il pannello Analisi colora le feature per attributo, sia con scala numerica che con palette categorica, e funziona anche con il clustering attivo.
 
 Il resto è quello che ci si aspetta da una mappa web moderna: misuratore di distanza e area, geolocalizzazione, scala grafica, galleria di mappe di base (Google Maps inclusa), supporto fullscreen.
+
+### Demo video
+
+[![GeoSheet demo](https://img.youtube.com/vi/fYcjg_Kb6B4/0.jpg)](https://youtu.be/fYcjg_Kb6B4)
